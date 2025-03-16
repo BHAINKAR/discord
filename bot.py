@@ -28,7 +28,7 @@ logging.basicConfig(
 logger = logging.getLogger('discord')
 
 # Bot Configuration
-BOT_TOKEN = os.getenv('DISCORD_TOKEN', 'MTA4Nzg5NTU2NzI4OTU2MTEzOA.Gf0-1c.JRa8orqy1L069j1A56UT6ysvkubEdZP6KakgNM')
+BOT_TOKEN = os.getenv('DISCORD_TOKEN')
 GENIUS_TOKEN = os.getenv('GENIUS_TOKEN', 'K8uJzBJWDENpa4x5BxN7v2ML-E9BfNvOpWCux7DkSmhbeoO5L1bpS80uAwcRnRtD')
 COMMAND_PREFIX = '!'à
 STATUS_MESSAGE = '🎵 LapisMusic | /help'
