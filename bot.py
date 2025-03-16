@@ -11,7 +11,8 @@ import re
 import random
 from collections import deque
 import lyricsgenius
-
+from flask import flask
+import threading
 # Load environment variables
 load_dotenv()
 
@@ -27,9 +28,9 @@ logging.basicConfig(
 logger = logging.getLogger('discord')
 
 # Bot Configuration
-BOT_TOKEN = os.getenv('DISCORD_TOKEN', 'MTA4Nzg5NTU2NzI4OTU2MTEzOA.GQ96fL.vLsUKMKYkyy8VUL1TNnDuO1vBGP-3uH53DlWM0')
+BOT_TOKEN = os.getenv('DISCORD_TOKEN', 'MTA4Nzg5NTU2NzI4OTU2MTEzOA.Gf0-1c.JRa8orqy1L069j1A56UT6ysvkubEdZP6KakgNM')
 GENIUS_TOKEN = os.getenv('GENIUS_TOKEN', 'K8uJzBJWDENpa4x5BxN7v2ML-E9BfNvOpWCux7DkSmhbeoO5L1bpS80uAwcRnRtD')
-COMMAND_PREFIX = '!'
+COMMAND_PREFIX = '!'à
 STATUS_MESSAGE = '🎵 LapisMusic | /help'
 BOT_STATUS = discord.Status.dnd
 
@@ -356,3 +357,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "NepCraft Music Bot is running!"
+
+def run_flask():
+    app.run(host='0.0.0.0', port=8080)
+
+threading.Thread(target=run_flask, daemon=True).start()
+
