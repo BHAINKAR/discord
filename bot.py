@@ -11,7 +11,7 @@ import re
 import random
 from collections import deque
 import lyricsgenius
-from flask import flask
+from flask import Flask, request
 import threading
 # Load environment variables
 load_dotenv()
