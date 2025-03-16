@@ -4,3 +4,4 @@ python-dotenv
 async-timeout
 lyricsgenius
 ffmpeg
+pynacl
