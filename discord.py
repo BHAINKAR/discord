@@ -27,17 +27,17 @@ logging.basicConfig(
 logger = logging.getLogger('discord')
 
 # Bot Configuration
-BOT_TOKEN = os.getenv('DISCORD_TOKEN', 'MTA4Nzg5NTU2NzI4OTU2MTEzOA.GQ96fL.vLsUKMKYkyy8VUL1TNnDuO1vBGP-3uH53DlWM0')
-GENIUS_TOKEN = os.getenv('GENIUS_TOKEN', 'K8uJzBJWDENpa4x5BxN7v2ML-E9BfNvOpWCux7DkSmhbeoO5L1bpS80uAwcRnRtD')
+BOT_TOKEN = os.getenv('DISCORD_TOKEN')
+GENIUS_TOKEN = os.getenv('GENIUS_TOKEN')
 COMMAND_PREFIX = '!'
-STATUS_MESSAGE = '🎵 NepCraft | /help'
+STATUS_MESSAGE = '🎵 LapisMusic | /help'
 BOT_STATUS = discord.Status.dnd
 
 # FFmpeg configuration (Android/Pydroid3 path)
 FFMPEG_OPTIONS = {
     'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5',
     'options': '-vn',
-    'executable': '/data/data/com.termux/files/usr/bin/ffmpeg'
+    'executable': 'ffmpeg'
 }
 
 # Optimized YouTube DL configuration
