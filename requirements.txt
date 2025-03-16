@@ -5,4 +5,4 @@ async-timeout
 lyricsgenius
 ffmpeg
 pynacl
-flqsk
+flaska
