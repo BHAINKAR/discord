@@ -36,21 +36,16 @@ BOT_STATUS = discord.Status.dnd
 # FFmpeg configuration (Android/Pydroid3 path)
 FFMPEG_OPTIONS = {
     'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5',
-    'options': '-vn',
-    'executable': 'ffmpeg'
+    'options': '-vn'
 }
 
 # Optimized YouTube DL configuration
 YTDL_OPTIONS = {
     'format': 'bestaudio/best',
     'noplaylist': True,
-    'nocheckcertificate': True,
-    'ignoreerrors': True,
     'quiet': True,
     'no_warnings': True,
-    'source_address': '0.0.0.0',
     'socket_timeout': 3,
-    'extract_flat': True,
 }
 
 intents = discord.Intents.default()
