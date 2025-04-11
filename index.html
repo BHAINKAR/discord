@@ -3,65 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Status Bot</title>
+    <title>SHIVA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #36393f;
-            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
+            background: linear-gradient(135deg, #ff007a, #ffb74d);
+            overflow: hidden;
         }
         .container {
-            background-color: #2f3136;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
+            text-align: center;
+            color: white;
         }
-        h1 {
-            color: #7289da;
+        .main-heading, .sub-heading {
+            font-size: 4rem;
+            margin: 0;
+            position: relative;
+            animation: glitch 1.5s infinite;
         }
-        .status {
+        .main-heading {
+            font-size: 5rem;
+        }
+        .sub-heading {
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+        .icons {
             margin-top: 20px;
-            padding: 15px;
-            background-color: #40444b;
-            border-radius: 5px;
         }
-        .ascii-art {
-            font-family: monospace;
-            white-space: pre;
-            font-size: 12px;
-            margin: 20px 0;
-            color: #7289da;
+        .icons a {
+            color: white;
+            margin: 0 15px;
+            font-size: 2rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .icons a:hover {
+            color: #ffb74d;
+        }
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+                text-shadow: 1px 1px 0 #fff, -1px -1px 0 #ff007a;
+            }
+            20% {
+                transform: translate(-5px, 5px);
+                text-shadow: 2px 2px 0 #ff007a, -2px -2px 0 #ffb74d;
+            }
+            40% {
+                transform: translate(5px, -5px);
+                text-shadow: 1px 1px 0 #ffb74d, -1px -1px 0 #ff007a;
+            }
+            60% {
+                transform: translate(-5px, -5px);
+                text-shadow: 2px 2px 0 #fff, -2px -2px 0 #ff007a;
+            }
+            80% {
+                transform: translate(5px, 5px);
+                text-shadow: 1px 1px 0 #ff007a, -1px -1px 0 #ffb74d;
+            }
+            100% {
+                transform: translate(0);
+                text-shadow: 1px 1px 0 #fff, -1px -1px 0 #ff007a;
+            }
+        }
+        @media (max-width: 768px) {
+            .main-heading {
+                font-size: 3rem;
+            }
+            .sub-heading {
+                font-size: 1rem;
+            }
+            .icons a {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Discord Status Bot</h1>
-        <div class="ascii-art">
-☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
-                                                 
-  _________ ___ ___ ._______   _________    
- /   _____//   |   \|   \   \ /   /  _  \   
- \_____  \/    ~    \   |\   Y   /  /_\  \  
- /        \    Y    /   | \     /    |    \ 
-/_______  /\___|_  /|___|  \___/\____|__  / 
-        \/       \/                     \/  
-                    
-☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
-        </div>
-        <p>This bot is currently running and rotating status messages.</p>
-        <div class="status">
-            <h2>Bot Status</h2>
-            <p>The bot is currently online and rotating between status messages.</p>
+        <div class="main-heading">SHIVA</div>
+        <div class="sub-heading">GlaceYT</div>
+        <div class="icons">
+            <a href="https://discord.com/invite/xQF9f9yUEM" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://www.youtube.com/@GlaceYT" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://github.com/GlaceYT" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
     </div>
 </body>
 </html>
+                 
